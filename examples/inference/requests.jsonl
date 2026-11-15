@@ -1,0 +1,8 @@
+{"task_id": 0, "prompt": "Explain how tensor parallelism splits a matrix multiplication.", "output_tokens": 128}
+{"task_id": 1, "prompt": "Describe the difference between PCIe and NVLink.", "output_tokens": 128}
+{"task_id": 2, "prompt": "Explain why collective communication can limit inference scaling.", "output_tokens": 128}
+{"task_id": 3, "prompt": "Describe CUDA streams and event dependencies.", "output_tokens": 128}
+{"task_id": 4, "prompt": "Compare throughput and time to first token.", "output_tokens": 128}
+{"task_id": 5, "prompt": "Explain how all-reduce combines partial matrix products.", "output_tokens": 128}
+{"task_id": 6, "prompt": "Describe a practical GPU benchmark methodology.", "output_tokens": 128}
+{"task_id": 7, "prompt": "Explain memory bandwidth and arithmetic intensity.", "output_tokens": 128}

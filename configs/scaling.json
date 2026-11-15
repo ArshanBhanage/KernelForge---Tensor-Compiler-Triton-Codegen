@@ -1,0 +1,8 @@
+{
+  "model": "TinyLlama/TinyLlama-1.1B-Chat-v1.0",
+  "dataset": "examples/inference/requests.jsonl",
+  "world_sizes": [1, 2, 4, 8],
+  "warmup": 10,
+  "concurrency": 16,
+  "timeout_seconds": 3600
+}

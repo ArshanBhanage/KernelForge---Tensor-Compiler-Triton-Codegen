@@ -13,3 +13,7 @@ target_link_libraries(compiler_tests PRIVATE kernelforge)
 add_test(NAME compiler COMMAND compiler_tests)
 find_package(Python3 COMPONENTS Interpreter REQUIRED)
 add_test(NAME generated_python COMMAND ${Python3_EXECUTABLE} ${CMAKE_SOURCE_DIR}/python/check_codegen.py $<TARGET_FILE:kforge>)
+
+add_test(NAME distributed_inference_contracts
+ COMMAND ${Python3_EXECUTABLE} -m unittest discover -s tests -p test_distributed.py -v)
+set_tests_properties(distributed_inference_contracts PROPERTIES WORKING_DIRECTORY ${CMAKE_SOURCE_DIR})
